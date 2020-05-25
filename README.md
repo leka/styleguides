@@ -11,6 +11,7 @@ This project contains all the style guides we use at Leka to write code and/or d
 ## Styles
 
 - [x] - [C++ Style Guide](./cppguide.md)
+- [x] - [License Guide](./licenseguide.md)
 - [ ] - Swift Style Guide
 - [ ] - Documentation Style Guide
 
