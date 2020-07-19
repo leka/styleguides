@@ -53,18 +53,22 @@ The intent of this document is to provide maximal guidance with reasonable restr
 
 Code should be in par with [Mbed OS](https://github.com/armmbed/mbed-os) minimum supported versions:
 
-- C11
-- C++14
+- `-std=gnu11`
+- `-std=gnu++17`
 
 The C++ version targeted by this guide will advance (aggressively) over time. C++17 features can be tested if they provide a real advantage demonstrated by careful benchmark.
 
 ## Clang Format
 
-to do
+// TODO:
+
+## ISO C++ Rules
+
+- T.43: Prefer `using` over `typedef` for defining aliases - [[link](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#t43-prefer-using-over-typedef-for-defining-aliases)]
 
 ## Header Files
 
-In general, every `.cpp` file should have an associated `.h` file. There are some common exceptions, such as unittests and small `.cpp` files containing just a `main()` function.
+In general, every `.cpp` file should have an associated `.h` file. There are some common exceptions, such as unit tests and small `.cpp` files containing just a `main()` function.
 
 Correct use of header files can make a huge difference to the readability, size and performance of your code.
 
