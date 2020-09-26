@@ -60,7 +60,13 @@ The C++ version targeted by this guide will advance (aggressively) over time. C+
 
 ## Clang Format
 
-// TODO:
+Developers should never have to worry about breaking existing rules such as tabs vs. spaces, indentation of switch cases or the position of the opening curly brace.
+
+To help them, all our projects provide a [Clang Format](https://clang.llvm.org/docs/ClangFormat.html) configuration file (`.clang-format`) that dictates all the rules.
+
+The only thing left for the developer to do is install a Clang Format plugin for their IDE and activate `Format on save`. We'll take care of the rest.
+
+Formatting must happen as code is written and not be the subject of specific commits (unless it's a reformatting agreed upon).
 
 ## ISO C++ Rules
 
@@ -634,3 +640,4 @@ If you are naming something that is analogous to an existing C or C++ entity the
 - `bigpos` - `struct` or `class`, follows form of `pos`
 - `sparse_hash_map` - STL-like entity; follows STL naming conventions
 - `LONGLONG_MAX` - a constant, as in `INT_MAX`
+
