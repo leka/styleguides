@@ -68,6 +68,51 @@ The only thing left for the developer to do is install a Clang Format plugin for
 
 Formatting must happen as code is written and not be the subject of specific commits (unless it's a reformatting agreed upon).
 
+## Comments
+
+Comments should use the C++ style and be prefixed with `//`.
+
+C-style `/* ... */` comments are forbidden, even for multiple lines.
+
+```c++
+// This is a GOOD comment :)
+
+/* This is a BAD comment... :( */
+
+// This is a GOOD multiline comment
+// that describes something very
+// important in the code :)
+
+/*
+   This is a BAD multiline comment
+   that describes something very
+   important in the code :(
+*/
+```
+
+For Doxygen documentation, comments should have the following form:
+
+```c++
+///
+/// @class HelloWorld
+/// @brief This class is used to for debugging purpose to make sure the program is still running
+///
+class HelloWorld
+{
+    // ...
+}
+
+///
+/// @brief Blink a led for a specified amount of time
+///
+/// @param data Data structure with led pin & sleep time
+///
+void HelloWorld::blink(Data *data)
+{
+	data->led = !data->led;
+}
+```
+
 ## ISO C++ Rules
 
 - T.43: Prefer `using` over `typedef` for defining aliases - [[link](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#t43-prefer-using-over-typedef-for-defining-aliases)]
