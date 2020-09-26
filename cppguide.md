@@ -519,7 +519,7 @@ enum UrlTableErrors { ...
 
 The names of variables (including function parameters) and data members are all lowercase, with underscores between words. Data members of classes (but not structs) additionally have leading underscores. For instance: `a_local_variable`, `a_struct_data_member`, `_a_class_data_member`.
 
-#### Common Variable names
+#### Common Variable Names
 
 For example:
 
@@ -534,8 +534,8 @@ A generic variable must have the same name as its type. Reducing the number of t
 void setTopic(Topic * topic);
 void connect(Database * database);
 
-Point startingPoint, centerPoint;
-Name loginName;
+Point start_point, center_point;
+Name login_name;
 ```
 
 #### Class Data Members
